@@ -3,6 +3,8 @@ MySQL database connection using OOPS in PHP
 
 ## Usage
 
+Download `db.class.php` file and include in your project
+
 ###Creating Object of DB class
 
 ```php
