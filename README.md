@@ -3,7 +3,7 @@ MySQL database connection using OOPS in PHP
 
 ## Usage
 
-Creating Object of DB class
+######Creating Object of DB class
 
 ```php
 <?php
@@ -11,7 +11,7 @@ Creating Object of DB class
   $db = new DB();  
 ```
 
-Getting one specific data
+######Getting one specific data
 
 ```php
 <?php
@@ -20,7 +20,7 @@ Getting one specific data
   echo $User['name'].'<br>'; // display the name
   echo $User['email']; // display the email
 ```
-Getting multiple data
+######Getting multiple data
 
 ```php
 <?php
@@ -35,21 +35,21 @@ Getting multiple data
   }
 ```
 
-Inserting data by ``` bash execute() ``` method of DB Class
+######Inserting data by ` execute() ` method of DB Class
 
 ```php
 <?php
   $query = $db->execute('INSERT INTO users (name, email) VALUES ("Rahul", "rahul@email.com")');
 ```
 
-Updating data by ``` bash execute() ``` method of DB Class
+######Updating data by ` execute() ` method of DB Class
 
 ```php
 <?php
   $query = $db->execute('UPDATE users SET name="Rahul Kumar", email="rahulk@email.com" WHERE id=1');
 ```
 
-Inserting data by ``` bash insert() ``` method of DB Class
+######Inserting data by ` insert() ` method of DB Class
 
 ```php
 <?php
@@ -61,7 +61,7 @@ Inserting data by ``` bash insert() ``` method of DB Class
   $query = $db->insert('users', $queryArgs);
 ```
 
-Updating data by ``` bash update() ``` method of DB Class
+######Updating data by ` update() ` method of DB Class
 
 ```php
 <?php
