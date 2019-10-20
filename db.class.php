@@ -44,9 +44,9 @@ class DB {
         if(!$this->conn) {
             $this->conn = mysqli_connect($this->host, $this->db_user, $this->db_password, $this->db_name);
         }
-        if ($conn->connect_error) {
+        if ($this->conn->connect_error) {
             $this->status_fatal = true;
-            die("Connection failed: " . $conn->connect_error);
+            die("Connection failed: " . $this->conn->connect_error);
         } else {
             $this->status_fatal = false;
         }
