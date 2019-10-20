@@ -13,7 +13,7 @@ Download `db.class.php` file and include in your project
   $db = new DB();  
 ```
 
-###Getting one specific data
+### Getting one specific data
 
 ```php
 <?php
@@ -22,7 +22,7 @@ Download `db.class.php` file and include in your project
   echo $User['name'].'<br>'; // display the name
   echo $User['email']; // display the email
 ```
-###Getting multiple data
+### Getting multiple data
 
 ```php
 <?php
@@ -37,21 +37,21 @@ Download `db.class.php` file and include in your project
   }
 ```
 
-###Inserting data by ` execute() ` method of DB Class
+### Inserting data by ` execute() ` method of DB Class
 
 ```php
 <?php
   $query = $db->execute('INSERT INTO users (name, email) VALUES ("Rahul", "rahul@email.com")');
 ```
 
-###Updating data by ` execute() ` method of DB Class
+### Updating data by ` execute() ` method of DB Class
 
 ```php
 <?php
   $query = $db->execute('UPDATE users SET name="Rahul Kumar", email="rahulk@email.com" WHERE id=1');
 ```
 
-###Inserting data by ` insert() ` method of DB Class
+### Inserting data by ` insert() ` method of DB Class
 
 ```php
 <?php
@@ -63,7 +63,7 @@ Download `db.class.php` file and include in your project
   $query = $db->insert('users', $queryArgs);
 ```
 
-###Updating data by ` update() ` method of DB Class
+### Updating data by ` update() ` method of DB Class
 
 ```php
 <?php
